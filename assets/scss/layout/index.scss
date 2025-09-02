@@ -1,0 +1,31 @@
+@import "../variables.scss";
+@import "../animation.scss";
+body{
+    font-size: 16px;
+    font-family:$font-Poppins;
+    font-weight: 400;
+}
+.container {
+    width: 100%;
+    max-width: 1145px;    
+    margin: 0 auto;    
+}
+.btn {
+    font-size: 14px;
+    color: $white;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 10px 16px;
+    display: inline-block;    
+    cursor: pointer;
+    // border: 1px solid $primary-brd-clr;
+}
+:focus-visible {
+    outline: none;
+}
+
+
+
+
+
+

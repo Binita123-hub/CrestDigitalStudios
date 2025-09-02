@@ -1,0 +1,96 @@
+/* btn-rotation */
+@keyframes btn-rotation {
+  0% {
+    --gradient-angle: 0deg; }
+  100% {
+    --gradient-angle: 360deg; } }
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false; }
+/* logo moving */
+@keyframes movelogo {
+  0% {
+    margin-left: -100%; }
+  100% {
+    margin-left: 100%; } }
+@keyframes bounce {
+  0% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(-10px); } }
+@keyframes fadeInText {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes lefttoright {
+  0% {
+    left: 40%; }
+  50% {
+    left: 62%; }
+  100% {
+    left: 40%; } }
+:root {
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 1s; }
+
+/** Keyframes **/
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25%); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-25%); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+/* Animations */
+[data-animation] {
+  opacity: 0;
+  animation-timing-function: var(--animation-timing-function);
+  animation-fill-mode: both;
+  animation-duration: var(--animation-duration);
+  will-change: transform, opacity; }
+
+/* Disable self animation */
+.animations-disabled,
+.animations-disabled [data-animation] {
+  animation: none !important;
+  opacity: 1 !important; }
+
+/* // Slide Animations */
+.slideInUp {
+  animation-name: slideInUp; }
+
+.slideInDown {
+  animation-name: slideInDown; }
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; }
+
+.container {
+  width: 100%;
+  max-width: 1145px;
+  margin: 0 auto; }
+
+.btn {
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 10px 16px;
+  display: inline-block;
+  cursor: pointer; }
+
+:focus-visible {
+  outline: none; }
+
+/*# sourceMappingURL=index.css.map */

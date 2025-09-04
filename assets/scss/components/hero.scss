@@ -32,7 +32,7 @@
        z-index: 9;
     }
     .hero-text{ 
-        padding: 65px 16px 30px;
+        padding: 65px 16px 0px;
         border-radius: 24px;
         width: 100%;
         max-width: 650px;
@@ -74,6 +74,9 @@
     }
     .mascot-img {
         animation: bounce .7s ease infinite alternate;
+        img {
+            width: 109px;
+        }
     }
     .top-btn{
         // margin-top: -10px;

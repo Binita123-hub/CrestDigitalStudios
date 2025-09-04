@@ -11,8 +11,8 @@
                     </h1>
                 </div>
                 <div class="middle-cnt xs:flex w-full justify-between">
-                    <div class="mascot-img xs:mr-4 ">
-                        <img src="./images/mascot.png" alt="" />
+                     <div class="mascot-img xs:mr-4 ">
+                        <img id="slider" src="./images/Side-Mascot-1.png" alt="Slideshow Image">  
                     </div>
                     <div class="btn-wrap top-btn xs:flex items-center">
                         <a href="javascript:" class="btn btn-primary xs:mr-2 md:mr-4"><span>Launch</span></a>

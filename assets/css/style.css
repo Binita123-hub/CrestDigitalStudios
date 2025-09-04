@@ -274,7 +274,7 @@ header {
     padding: 80px 0 0;
     z-index: 9; }
   #hero-section .hero-text {
-    padding: 65px 16px 30px;
+    padding: 65px 16px 0px;
     border-radius: 24px;
     width: 100%;
     max-width: 650px;
@@ -307,6 +307,8 @@ header {
     margin: 0 auto; }
   #hero-section .mascot-img {
     animation: bounce .7s ease infinite alternate; }
+    #hero-section .mascot-img img {
+      width: 109px; }
   #hero-section .btn {
     font-size: 16px;
     font-style: italic;

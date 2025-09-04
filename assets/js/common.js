@@ -1,18 +1,18 @@
+const images = [
+      './images/Side-Mascot-1.png',
+      './images/Side-Mascot-2.png',
+      './images/Side-Mascot-3.png',
+    ];
+
+    let currentIndex = 0;
+    const slider = document.getElementById('slider');
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      slider.src = images[currentIndex];
+    }, 500); // Change image every 1000ms (1 second)
 
 
-// header scroll effect
-// document.addEventListener('DOMContentLoaded', function() {
-//   const header = document.querySelector('header');
-//   const scrollThreshold = 100; // Adjust this value as needed
-  
-//   window.addEventListener('scroll', function() {
-//     if (window.scrollY > scrollThreshold) {
-//       header.classList.add('header-scrolled');
-//     } else {
-//       header.classList.remove('header-scrolled');
-//     }
-//   });
-// });
 
 
 
